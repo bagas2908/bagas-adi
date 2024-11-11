@@ -8,7 +8,7 @@
   body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: #b6dbc1;
     color: #333;
   }
   
@@ -20,9 +20,9 @@
   
   /* Header */
   header {
-    background-color: #333;
+    background-color: #235c41;
     color: #fff;
-    padding: 50px 0;
+    padding: 25px 0;
     text-align: center;
   }
   
@@ -32,19 +32,20 @@
   
   header p {
     font-size: 1.2em;
+    padding: 25px;
   }
   
   .cta-btn {
-    background-color: #5cb85c;
+    background-color: #255225;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 5px; 
   }
   
   .cta-btn:hover {
-    background-color: #4cae4c;
+    background-color: #0f500f;
   }
   
   /* Sections */
@@ -52,10 +53,14 @@
     padding: 50px 0;
     text-align: center;
   }
+
+  .section .container p {
+    padding: 25px;
+  }
   
   .section h2 {
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .skills {
@@ -66,7 +71,7 @@
   }
   
   .skill {
-    background-color: #4caf50;
+    background-color: #255225;
     color: white;
     padding: 15px 30px;
     border-radius: 5px;
@@ -74,13 +79,15 @@
   }
   
   .project {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 20px;
     margin: 10px 0;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  
+
   .project h3 {
     font-size: 1.5em;
   }
@@ -95,13 +102,13 @@
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #000000;
     border-radius: 5px;
   }
   
   form button {
-    background-color: #333;
-    color: white;
+    background-color: #255225;
+    color: rgb(255, 255, 255);
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -109,12 +116,12 @@
   }
   
   form button:hover {
-    background-color: #444;
+    background-color: #0f500f;
   }
   
   /* Footer */
   footer {
-    background-color: #333;
+    background-color: #113b11;
     color: white;
     padding: 20px 0;
     text-align: center;
