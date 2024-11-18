@@ -1,133 +1,209 @@
 /* Global Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #b6dbc1;
-    color: #333;
-  }
-  
-  /* Container */
-  .container {
-    width: 80%;
-    margin: 0 auto;
-  }
-  
-  /* Header */
-  header {
-    background-color: #235c41;
-    color: #fff;
-    padding: 25px 0;
-    text-align: center;
-  }
-  
-  header h1 {
-    font-size: 2.5em;
-  }
-  
-  header p {
-    font-size: 1.2em;
-    padding: 25px;
-  }
-  
-  .cta-btn {
-    background-color: #255225;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px; 
-  }
-  
-  .cta-btn:hover {
-    background-color: #0f500f;
-  }
-  
-  /* Sections */
-  .section {
-    padding: 50px 0;
-    text-align: center;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .section .container p {
-    padding: 25px;
-  }
-  
-  .section h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-  }
-  
-  .skills {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .skill {
-    background-color: #255225;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    font-size: 1.2em;
-  }
-  
-  .project {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #b6dbc1;
+  color: #333;
+}
 
-  .project h3 {
-    font-size: 1.5em;
+body{
+  cursor: url("kursor.png") , auto;
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: #235c41;
+  color: #fff;
+  padding: 25px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+  padding: 25px;
+}
+
+.cta-btn {
+  background-color: #255225;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px; 
+}
+
+.cta-btn:hover {
+  background-color: #0f500f;
+}
+
+/* Sections */
+.section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section .container p {
+  padding: 25px;
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  background-color: #255225;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+/* Projects */
+.project {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  font-size: 1.5em;
+}
+
+/* Form */
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #255225;
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+form button:hover {
+  background-color: #0f500f;
+}
+
+/* Footer */
+footer {
+  background-color: #113b11;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+/* Keyframes untuk animasi memutar dan mengubah ukuran */
+@keyframes rotateAndScaleClockwise {
+  0% {
+      transform: rotate(0deg) scale(1);
   }
-  
-  form label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  100% {
+      transform: rotate(360deg) scale(1.5);
   }
-  
-  form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #000000;
-    border-radius: 5px;
+}
+
+@keyframes rotateAndScaleCounterClockwise {
+  0% {
+      transform: rotate(0deg) scale(1);
   }
-  
-  form button {
-    background-color: #255225;
-    color: rgb(255, 255, 255);
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
+  100% {
+      transform: rotate(-360deg) scale(1.5); /* Berputar berlawanan arah jarum jam */
   }
-  
-  form button:hover {
-    background-color: #0f500f;
-  }
-  
-  /* Footer */
-  footer {
-    background-color: #113b11;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  footer p {
-    font-size: 1em;
-  }
-  
+}
+
+/* Kotak Animasi */
+.box {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-radius: 25px;
+}
+
+/* Animasi untuk box1 dan box2 */
+.box1 {
+  background-color: #154b32;
+  animation: rotateAndScaleClockwise 4s infinite alternate;
+  top: 100px;
+  left: 100px;
+}
+
+.box2 {
+  background-color: #06884b;
+  animation: rotateAndScaleClockwise 4s infinite alternate;
+  top: 100px;
+  left: 110px;
+}
+
+/* Animasi untuk box3 dan box4 dengan arah berlawanan */
+.box3 {
+  background-color: #154b32;
+  animation: rotateAndScaleCounterClockwise 4s infinite alternate;
+  top: 100px;
+  left: 1180px;
+}
+
+.box4 {
+  background-color: #06884b;
+  animation: rotateAndScaleCounterClockwise 4s infinite alternate;
+  top: 100px;
+  left: 1170px;
+}
+
+/* Initial State for About and Skills Sections */
+#about, #skills {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Apply Animation when in-view */
+#about.in-view {
+  animation: slideInFromLeft 1s forwards;
+}
+
+#skills.in-view {
+  animation: slideInFromRight 1s forwards;
+}
